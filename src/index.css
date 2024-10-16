@@ -3,8 +3,8 @@ body {
 }
 
 body {
-  background: #f3f7f8;
-  font-size: 13px;
+  background: #f3f7f8 !important;
+  font-size: 13px !important;
   font-weight: 500;
   font-family: "Roboto", sans-serif; /* Use the Google Font */
 }
@@ -112,4 +112,159 @@ h6 {
 .btn-primary {
   background-color: #ff3008 !important;
   border-color: #ff3008 !important;
+}
+
+
+.slider-container .slick-slide img{width: 100%;}
+.grid-product-sldier .slick-slide{margin: 5px 2px;}
+.osahan-category-item {
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: center;
+  padding: 7px;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  border: 1px solid #fff;
+}
+
+.osahan-category-item img {
+  width: 40px !important;
+  height: 40px;
+  object-fit: cover;
+  display: inline-block !important;
+  border-radius: 50px;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  margin: 2px 0 8px;
+}
+
+
+.osahan-category-item h6 {
+  margin: 0;
+  font-size: 13px;
+  color: #ff3008;
+}
+
+.osahan-category-item a{text-decoration: none;}
+
+.osahan-category-item p{margin-bottom: 0;color: #7a7e8a;font-size: 12px;}
+
+
+
+.slick-arrow{
+  bottom: calc(50% - 20px);
+  border-radius: 30px !important;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .2);
+  color: #000 !important;
+  height: 40px !important;
+  line-height: 40px;
+  margin: 0 !important;
+  text-align: center;
+  text-transform: uppercase;
+  width: 40px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #fff !important;
+  z-index: 99;
+}
+
+.slick-prev:before, .slick-next:before{
+  color: #000 !important;
+}
+
+.grid-product-sldier .slick-arrow{
+  top: 25% !important;
+  transform: translate(0, -22px) !important;
+}
+
+.h-0{height: 0;}
+
+.line {
+  background-color: #5e5e5e;
+  border-radius: 12px;
+  display: inline-table;
+  height: 4px;
+  margin: 0 0 51px;
+  width: 50px;
+}
+
+.list-card .list-card-image {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.position-absolute {
+  z-index: 1;
+}
+
+.list-card .star {
+  right: 8px;
+  bottom: 10px;
+}
+
+.badge-success {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.badge-success, .btn-success {
+  background-color: #3ecf8e !important;
+  border-color: #3ecf8e !important;
+}
+
+.list-card .star .badge {
+  font-size: 11px;
+  padding: 5px;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.list-card .member-plan {
+  left: 8px;
+  top: 8px;
+}
+
+.badge-dark {
+  color: #fff;
+  background-color: #343a40;
+}
+
+.list-card .member-plan .badge {
+  font-size: 11px;
+  padding: 5px;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.list-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list-card p {
+  font-size: 13px;
+  color: #7a7e8a;
+}
+
+.brand-slider .slick-slide {
+  padding: 6px 7px;
+}
+
+.small, small {
+  font-size: 85%;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em !important;
+  font-size: 75% !important;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 2px !important;
+}
+
+.slick-track .slick-slide:nth-child(odd) .badge-dark{
+  background-color: #ff3008;
 }
