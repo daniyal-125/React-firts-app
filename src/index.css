@@ -1,13 +1,115 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif; /* Use the Google Font */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #f3f7f8;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif; /* Use the Google Font */
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+.osahan-nav {
+  background: #fff none repeat scroll 0 0 !important;
+  padding: 0;
+  z-index: 9;
+}
+
+.homepage-search-block {
+  background-color: #eef0ef;
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.text-secondary {
+  color: #6c757d !important;
+}
+
+/* Dropdown.css */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-dropdown select {
+  appearance: none; /* Remove the default caret */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 170px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4gPHBhdGggZD0iTTEgNGw3IDcsNy03eiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Position the caret icon */
+  background-size: 12px;
+}
+
+.custom-dropdown select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.custom-input-field {
+  padding: 8px;
+  width: 100%;
+}
+
+.custom-input-container {
+  position: relative;
+}
+
+.custom-input-container input {
+  position: relative;
+}
+
+.locate-me {
+  background: #ececec none repeat scroll 0 0;
+  color: #666;
+  font-size: 12px;
+  padding: 7px 10px;
+  border-radius: 3px;
+  position: absolute;
+  right: 9px;
+  top: 6px;
+}
+
+.homepage-search-block .btn {
+  font-size: 15px;
+  font-weight: 600;
+  height: auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn,
+.form-control {
+  border-radius: 2px;
+}
+
+.badge-danger,
+.btn-primary {
+  background-color: #ff3008 !important;
+  border-color: #ff3008 !important;
 }
