@@ -7,20 +7,26 @@ import Contact from './components/Contact';
 import Blog from './components/Blog';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Footer from './components/Footer';
+import './App.css'; // Ensure you import your CSS
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="wrapper"> {/* Added wrapper */}
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-        </Routes>
-       
+        <div className="content"> {/* Content area */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        </div>
+        <Footer /> {/* Footer component placed outside of Routes */}
       </div>
     </Router>
   );
-};export default App;
+}
+
+export default App;

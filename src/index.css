@@ -255,16 +255,12 @@ h6 {
   font-size: 85%;
   font-weight: 600;
 }
-
-.badge {
-  display: inline-block;
-  padding: .25em .4em !important;
-  font-size: 75% !important;
-  font-weight: 700;
-  line-height: 1;
+.badge{
   border-radius: 2px !important;
+}.slick-track .slick-slide:nth-child(odd) .badge-dark{
+  background-color: #ff3008;
 }
 
-.slick-track .slick-slide:nth-child(odd) .badge-dark{
-  background-color: #ff3008;
+.footer {
+  background: #edf1f4;
 }

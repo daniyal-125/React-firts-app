@@ -28,7 +28,7 @@ const Brand = () => {
     };
 
     return (
-        <div className='slider-container brand-slider h-0'>
+        <div className='slider-container brand-slider'>
             <div className="section-header text-center">
                 <h2>Popular Brands</h2>
                 <p>Top restaurants, cafes, pubs, and bars in Ludhiana, based on trends</p>
