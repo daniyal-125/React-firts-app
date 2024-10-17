@@ -14,6 +14,7 @@ p {
   color: #7a7e8a;
 }
 
+a{text-decoration: none !important;}
 .h1,
 .h2,
 .h3,
@@ -304,7 +305,85 @@ h6 {
   font-weight: bold;
   color: #ff3008 !important;
 }
+.error {
+  color: red;
+  font-size: 12px;
+}
+.bg-image{
+  background-image:url('../src/assets/login-bg.png');
+  background-size: cover;
+  background-position: 50%;
+}
+.login-heading {
+  font-weight: 300;
+}
 
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-custum-control {
+  font-size: 13px;
+  min-height: 38px;
+  width: 100%;
+}
+
+.form-label-group>input, .form-label-group>label {
+  padding: 15px 0;
+  border-radius: 0;
+  height: 51px;
+  background: transparent !important;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  box-shadow: none !important;
+  width: 100%;
+}
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  cursor: text;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-lg {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  padding: 14px 35px !important;
+  letter-spacing: 1px;
+}
+
+.btn-outline-primary {
+  color: #ff3008 !important;
+  border-color: #ff3008 !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+  color: #fff !important;
+  border-color: #ff3008 !important;
+  background-color: #ff3008 !important;
+}
+
+input:focus-visible{outline-offset: 0 !important;outline: none !important;}
+label:focus-visible{outline-offset: 0;outline: none;}
+
+.form-label-group .form-label.active{
+  font-size: 9px;
+}
 
 @media (max-width: 575.98px) {
   .mobile-none {
