@@ -9,6 +9,11 @@ body {
   font-family: "Roboto", sans-serif; /* Use the Google Font */
 }
 
+p {
+  font-size: 13px;
+  color: #7a7e8a;
+}
+
 .h1,
 .h2,
 .h3,
@@ -56,7 +61,7 @@ h6 {
   appearance: none; /* Remove the default caret */
   background-color: #fff;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 9px;
   width: 170px;
   font-size: 16px;
   border-radius: 4px;
@@ -72,7 +77,7 @@ h6 {
 }
 
 .custom-input-field {
-  padding: 8px;
+  padding: 10px;
   width: 100%;
 }
 
@@ -96,11 +101,12 @@ h6 {
 }
 
 .homepage-search-block .btn {
-  font-size: 15px;
-  font-weight: 600;
-  height: auto;
-  padding: 10px;
-  width: 100%;
+   font-size: 15px;
+    font-weight: 600;
+    height: auto;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0;
 }
 
 .btn,
@@ -263,4 +269,45 @@ h6 {
 
 .footer {
   background: #edf1f4;
+}
+
+.footer h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.text-info {
+  color: #17a2b8 !important;
+}
+
+.footer p a{
+  outline: none !important;
+  color: #ff3008;
+  text-decoration: none !important;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  line-height: 26px;
+  list-style: outside none none;
+}
+.footer ul li a {
+  color: #6c8293;
+  text-decoration: none;
+}
+
+.active.nav-link {
+  font-weight: bold;
+  color: #ff3008 !important;
+}
+
+
+@media (max-width: 575.98px) {
+  .mobile-none {
+      display: none;
+  }
 }

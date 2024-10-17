@@ -1,16 +1,16 @@
 // src/components/Navbar.js
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
     <nav className="navbar-light osahan-nav shadow-sm navbar navbar-expand-lg navbar-light">
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/">
           <img src={logo} alt="Logo" className="logo-brand" />
-        </Link>
+        </NavLink >
         <button
           className="navbar-toggler"
           type="button"
@@ -25,24 +25,24 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
-                Home
-              </Link>
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>
+            Home
+          </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                About
-              </Link>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>
+            About
+          </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-              Contact
-              </Link>
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>
+            Contact
+          </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blog">
-              Blog
-              </Link>
+            <NavLink to="/blog" className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>
+            Blog
+          </NavLink>
             </li>
           </ul>
         </div>

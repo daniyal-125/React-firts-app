@@ -1,7 +1,16 @@
 import React from 'react';
+import app1 from '../assets/google.png'
+import app2 from '../assets/apple.png'
 
 const Footer = () => {
   return (
+    <>
+    <section className="section pt-5 pb-5 text-center bg-white">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
+            <h5 className="m-0">Operate food store or restaurants? <a href="/login" style={{color: '#ff3008'}}>Work With Us</a></h5></div></div></div></section>
+  
     <section className="footer pt-5 pb-5">
       <div className="container">
         <div className="row">
@@ -26,8 +35,8 @@ const Footer = () => {
             </p>
             <div className="app">
               <p className="mb-2">DOWNLOAD APP</p>
-              <a href="/"><img src="img/google.png" alt="Google Play" className="img-fluid" /></a>
-              <a href="/"><img src="img/apple.png" alt="Apple Store" className="img-fluid" /></a>
+              <a href="/"><img src={app1} alt="Google Play" className="img-fluid" /></a>
+              <a href="/"><img src={app2} alt="Apple Store" className="img-fluid" /></a>
             </div>
           </div>
 
@@ -72,6 +81,7 @@ const Footer = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
