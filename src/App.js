@@ -4,13 +4,14 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Blog from './components/Blog';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Footer from './components/Footer';
 import './App.css';
 import Register from "./components/Register";
 import Login from './components/Login';
+import Blog from './components/Blog';
+import BlogDetails from './components/BlogDetails';
 
 function App() {
   return (
@@ -23,9 +24,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
         </Routes>
 
         {/* Render FooterConditionally component */}
