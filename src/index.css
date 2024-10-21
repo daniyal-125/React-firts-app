@@ -462,6 +462,48 @@ label:focus-visible{outline-offset: 0;outline: none;}
   transform: scale(1.1);
 }
 
+.metro_post .metro_post-body h5 {
+  font-size: 20px;
+  margin: 0 0 15px;
+  word-break: break-word;
+}
+.metro_post .metro_post-body h5 a {
+  color: #222;
+}
+.metro_post .metro_post-body .metro_post-desc p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.btn-link {
+  color: #7a7a7a;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.metro_post .metro_post-body h5 a:hover, .metro_post-meta a:hover {
+  color: #dc3545;
+}
+
+.entry-content {
+  padding: 30px;
+  border: 1px solid #ebebeb;
+}
+.entry-title {
+  font-size: 35px;
+}
+
+.entry-content p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.recent-blogs{
+  padding: 30px;
+  border: 2px solid #ebebeb;
+}
+.bg-transparent{background-color: inherit !important;}
+
+
 @media (max-width: 575.98px) {
   .mobile-none {
       display: none;
